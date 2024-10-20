@@ -5,6 +5,7 @@ import { Avatar,AvatarFallback,AvatarImage } from "./ui/avatar"
 import { Button } from "./ui/button"
 import { ImageIcon } from "lucide-react"
 import { XIcon } from "lucide-react"
+import createPostAction from "@/actions/createPostAction"
 
 
 import { useUser } from "@clerk/nextjs"
@@ -22,7 +23,7 @@ const PostForm = () => {
         }
         setPreview(null);
         try{
- await createPostAction(copy);
+    await createPostAction(copy);
         }
         catch(err){
             console.log(err);
