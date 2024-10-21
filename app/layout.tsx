@@ -23,7 +23,7 @@ export default function RootLayout({
         className="min-h-screen flex flex-col"
       >
 
-        {/* {Toaster} */}
+       
         <header className="border-b sticky top-0 bg-white z-50">
           < Header />
         </header>
